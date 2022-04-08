@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/App.css";
 const App = () => {
   const handleDoubleClick = (event) => {
-    if (event.detail == 2) console.log("I was double clicked ");
+    if (event.detail == 2) console.log("I was double clicked");
     else console.log("I was not double clicked");
   };
   return (
