@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/App.css";
 const App = () => {
   const handleDoubleClick = (event) => {
-    // event.preventDefault();
     if (event.detail == 2) {
       console.log("I was double clicked ");
     } else {
@@ -11,7 +10,7 @@ const App = () => {
   };
   return (
     <div id="main">
-      <button id="dblclick-btn" onClick={handleDoubleClick}>
+      <button id="dblclick-btn" onDubleClick={handleDoubleClick}>
         Double click me
       </button>
     </div>
