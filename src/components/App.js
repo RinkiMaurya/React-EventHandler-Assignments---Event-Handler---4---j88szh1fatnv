@@ -3,19 +3,23 @@ import "../styles/App.css";
 const App = () => {
   const handleDoubleClick = (event) => {
     event.preventDefault();
-    console.log("I was double clicked ");
+    if (event.detail == 2) {
+      console.log("I was double clicked ");
+    } else {
+      console.log("I was not double clicked");
+    }
   };
-  const handleSingleClick = (event) => {
-    event.preventDefault();
-    console.log("I was not double clicked ");
-  };
+  // const handleSingleClick = (event) => {
+  //   event.preventDefault();
+  //   console.log("I was not double clicked ");
+  // };
 
   return (
     <div id="main">
       <button
         id="dblclick-btn"
-        onDoubleClick={handleDoubleClick}
-        onClick={handleSingleClick}
+        onClick={handleDoubleClick}
+        // onClick={handleSingleClick}
       >
         Double click me
       </button>
