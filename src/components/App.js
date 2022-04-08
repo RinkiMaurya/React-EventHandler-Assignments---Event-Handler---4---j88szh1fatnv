@@ -10,7 +10,7 @@ const App = () => {
   };
   return (
     <div id="main">
-      <button id="dblclick-btn" onDoubleClick={handleDoubleClick}>
+      <button id="dblclick-btn" onClick={handleDoubleClick}>
         Double click me
       </button>
     </div>
